@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact {
+    background: url(../img/conactformback.jpg) no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+.head {
+    background-color: #08129e;
+    border-radius: 5px;
+    margin-top: -40px;
+}
+
+.effect {
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 7px 0;
+    border-bottom: 1px solid #08129e;
+}
+
+.effect ~ .focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #08129e;
+    transition: 0.4s;
+}
+
+.effect:focus ~.focus-border{
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+
+.btn{
+    background-color: #08129e;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 145px;
+}
+
+.btn:hover {
+   color:  #53cde2;
+}
